@@ -1,0 +1,17 @@
+
+:root {
+    --container-color: #ffffff;
+    --page-color: #ffffff;
+    --paragraph-color: #ffffff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--page-color);
+}
