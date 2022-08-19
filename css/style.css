@@ -1,61 +1,86 @@
-
 :root {
-    --container-color: #19589D;
-    --page-color: #0D192B;
-    --h1-color: #ffffff;
-    --paragraph-color: #ffffff;
+    
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+/* Neutral */
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
 }
 
 /* Reset */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: var(--page-color);
+    font-size: 18px;
+    background: var(--main-BG);
+    color: hsl(0, 0%, 60%);
+    padding: 1.25rem;
 }
 
 .container {
-    background: var(--container-color);
+    background: var(--card-BG);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
 }
 
-.card-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-1 h1 {
-    color: var(--h1-color);
-}
-
-.card-1 p {
-    color: var(--paragraph-color);
-    font-size: 18px;
-}
-
-.card-1 img {
-    border-radius: 4% 4% 4% 4%;
-    padding: 0.5rem;
-    margin-bottom: 0.25rem;
-}
-
-.card-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.card-3 {
+.container ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line);
 }
 
-.card-3 img {
-    width: 10%;
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+
+.container ul li img {
+    margin-right: 0.5rem;
+}
+
+.container ul li:first-child {
+    color: var(--cyan);
+}
+
+.container ul li:last-child {
+    color: var(--white);
+}
+
+h1 {
+    color: var(--white);
+    margin: 1rem 0.5rem 0.5rem;
+}
+
+p {
+    color: var(--white);
+}
+
+.attribution {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+.attribution img {
+    width: 3.5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    margin-right: 1rem;
 }
