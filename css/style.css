@@ -73,6 +73,10 @@ body {
     opacity: 0.8;
 }
 
+.container article img {
+    border-radius: 4% 4% 4% 4%;
+}
+
 .attribution {
     padding-top: 1rem;
     display: flex;
